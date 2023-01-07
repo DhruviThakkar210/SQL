@@ -1,0 +1,26 @@
+/*
+
+Person table:
++----+------------------+
+| id | email            |
++----+------------------+
+| 1  | john@example.com |
+| 2  | bob@example.com  |
+| 3  | john@example.com |
++----+------------------+
+Output: 
++----+------------------+
+| id | email            |
++----+------------------+
+| 1  | john@example.com |
+| 2  | bob@example.com  |
++----+------------------+
+
+
+
+
+*/
+
+QUERY :
+
+DELETE a from Person a, Person b where a.id>b.id AND a.email = b.email;
